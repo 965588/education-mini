@@ -1,0 +1,57 @@
+<!--pages/register/register.wxml-->
+
+<form bindsubmit="submitForm" bindreset="formReset">
+    <view class="top">
+         <view class="mobile_l">
+            <image  class="genre" src="../../img/Tuto1.png"></image>
+            <picker class="choice_l" bindchange="bindPickerChange" value="{{0}}" range="{{course}}">
+              <view class="picker">
+                <input class="mobiles" name='teacher' value='{{option}}' placeholder="选择教员类型" />
+              </view>
+            </picker>
+         </view>
+        <view class="mobile_l">
+            <image  class="genre" src="../../img/Phone.png"></image>
+            <input class="mobile" type='number' name="tel"  placeholder="请输入手机号"></input>
+        </view>
+        
+         <view class="mobile_r">
+            <image  class="genre" src="../../img/VerificationCode.png"></image>
+            <input class="auth_l" name='verify' placeholder="请输入验证码" />
+            <view class="choice">
+                <view class="btntext" bindtap='sendcode'>{{btntext}}</view>
+            </view>
+        </view>
+        
+        <view class="mobile_r">
+            <image  class="genre" src="../../img/password.png"></image>
+            <input class="password_r" name='pwd' placeholder="请输入6-16位密码"  />
+            <view class="password">
+                <image src="../../img/display.png"></image>
+            </view>
+        </view>
+         
+        <view class="mobile_r">
+            <image  class="genre" src="../../img/password.png"></image>
+            <input class="password_r" name='pwdd' placeholder="确认密码" auto-focus />
+            <view class="password">
+                <image src="../../img/display.png"></image>
+            </view>
+        </view>
+    </view>
+
+
+    <view class='radio-group'>
+      <checkbox-group name="assistance" class="radio">
+       <radio value=""  checked="{{TFStatus}}"  bindtap='TS'></radio>
+        <navigator class='radio_l_l'>注册即同意《用户协议》《免责声明》</navigator>
+      </checkbox-group>
+    </view>
+
+     <button class="refer"  formType="submit">注册</button>
+     <view class="sign_in"> 
+        <view class="sign_in_l">已有账号？</view>
+        <navigator url='../teacher_login/teacher_login'>登录</navigator>
+     </view> 
+ 
+</form>

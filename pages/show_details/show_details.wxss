@@ -1,0 +1,22 @@
+.top{
+  width: 100%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+.content{
+  width: 355px;
+  height:80px;
+  border-bottom: 1px solid #e7e7e7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_l{
+  font-size: 14px;
+  color:#656565;
+  line-height: 25px;
+}
+.content_r{
+  font-size: 14px;
+  color:#989898;
+}

@@ -1,0 +1,119 @@
+/* pages/teachers_ center/teachers_center.wxss */
+.top{
+  width: 100%;
+  padding:0 20rpx;
+  box-sizing: border-box;
+}
+.auditor{
+  margin-top: 32rpx;
+  width: 100%;
+  height: 105px;
+  box-shadow:0 0 10rpx 6rpx  #e7e7e7;
+  padding:0 10rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+.auditor_l{
+  width:152rpx;
+  height: 152rpx; 
+  float: left;
+}
+.auditor_r{
+  width:24rpx;
+  height: 40rpx;
+}
+.state{
+  width:270rpx;
+  height: 152rpx;
+  color: #656565;
+  font-size: 32rpx;
+  margin-top: 60rpx;
+}
+.state_l{
+  margin-top: 10rpx;
+}
+.money_state{
+  width: 320rpx;
+  height: 40rpx;
+  padding: 0 25rpx;
+}
+.money{
+  margin-top: 48rpx;
+  width: 100%;
+  height: 100rpx;
+  box-shadow:0 0 10rpx 6rpx #e7e7e7;
+  padding:0 10rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.money_l{
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.money_state_l{
+  float: left;
+  font-size: 32rpx;
+  color: #656565;
+  margin-top: 4rpx;
+}
+.money_state_r{
+  font-size: 40rpx;
+  color: #61BD3B
+}
+.content{
+  margin-top: 48rpx;
+  width: 100%;
+  height: 400rpx;
+  box-shadow:0 0 10rpx 6rpx #e7e7e7;
+  padding:0 10rpx;
+  box-sizing: border-box;
+
+}
+.subscribe{
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.my_subscribe{
+  width:120rpx;
+  height: 30rpx;
+  color: #656565;
+  font-size: 28rpx;
+  padding: 0 20rpx;
+}
+.my_subscribe_image{
+  width:24rpx;
+  height: 40rpx;
+}
+.my_info{
+  width: 150rpx;
+  height: 40rpx;
+   font-size: 14px;
+  color: #656565;
+}
+.attestation{
+  width: 80rpx;
+  height: 40rpx;
+  font-size: 24rpx;
+  color: #FF0000;
+}
+.amend{
+  margin-top: 48rpx;
+  width: 100%;
+  height: 200rpx;
+  box-shadow:0 0 10rpx 6rpx #e7e7e7;
+  padding:0 0px;
+  box-sizing: border-box;
+
+}
+.common{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,46 @@
+<!--pages/register/register.wxml-->
+<form bindsubmit="submitForm" >
+    <view class="top">
+        <view class="mobile_l">
+            <image  class="genre" src="../../img/Phone.png"></image>
+            <input class="mobile" placeholder="请输入手机号" name="tel" />
+        </view>
+        
+         <view class="mobile_r">
+            <image  class="genre" src="../../img/VerificationCode.png"></image>
+            <input class="auth_l" name="verify" placeholder="请输入验证码"  />
+            <view class="choice">
+                <image src="../../img/button3.png"></image>
+            </view>
+        </view>
+        
+        <view class="mobile_r">
+            <image  class="genre" src="../../img/password.png"></image>
+            <input class="password_r" placeholder="请输入6-16位密码" name="pwd"/>
+            <view class="password">
+                <image src="../../img/display.png"></image>
+            </view>
+        </view>
+        
+        <view class="mobile_r">
+            <image  class="genre" src="../../img/password.png"></image>
+            <input class="password_r" placeholder="确认密码" name="pwdd" />
+            <view class="password">
+                <image src="../../img/display.png"></image>
+            </view>
+        </view>
+      </view>
+       <view class='radio-group'>
+          <checkbox-group name="assistance" class="radio">
+          <radio value=""  checked="{{TFStatus}}"  bindtap='TS'></radio>
+            <navigator class='radio_l_l'>注册即同意《用户协议》《免责声明》</navigator>
+          </checkbox-group>
+       </view>
+
+    <button class="refer" formType="submit">注册</button>
+     <view class="sign_in"> 
+        <view class="sign_in_l">已有账号？</view>
+        <navigator url='../student_login/student_login' hover-class="none">登录</navigator>
+     </view> 
+    
+</form>

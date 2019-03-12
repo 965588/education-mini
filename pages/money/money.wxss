@@ -1,0 +1,48 @@
+/* pages/money/money.wxss */
+.top{
+  width: 100%
+}
+.wallet{
+  display: flex;
+  justify-content: center
+}
+.image{
+  width: 180rpx;
+  height: 154rpx;
+  margin-top: 180rpx;
+}
+.money{
+  width:360rpx;
+  height: 70rpx;
+  margin: 46rpx auto 176rpx auto;
+}
+.money_l{
+  font-size: 88rpx;
+  color:#656565;
+}
+.font{
+  font-size: 48rpx;
+  color:#656565;
+}
+.refer{
+  width: 80%;
+  height: 88rpx;
+  background-color: #61BD3B;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+  line-height: 88rpx;
+  color: #fff;
+}
+.refe1{
+  width: 80%;
+  height: 88rpx;
+  border: 2rpx solid #61BD3B;
+  margin-top: 40rpx;
+  margin-bottom: 80rpx;
+  color: #61BD3B;
+  line-height: 88rpx;
+}
+
+.f-money{
+
+}

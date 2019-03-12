@@ -1,0 +1,28 @@
+<form bindsubmit="formSubmit">
+  <view class="top">
+    <view class="mobile_l">
+      <image class="genre" src="../../img/Phone.png"></image>
+      <input type="number" class="mobile" name='tel' value='{{form.phone}}' placeholder="请输入手机号" auto-focus />
+    </view>
+    <view class="mobile_r">
+      <image class="genre" src="../../img/password.png"></image>
+      <input type='password' class="password_r" name='pass' value='{{form.pass}}' placeholder="请输入密码" auto-focus />
+      <view class="password">
+        <image src="../../img/display.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="forget">
+    <navigator url='../password_hint/password_hint' hover-class="none">
+      <view class="radio_l_l">忘记密码</view>
+    </navigator>
+  </view>
+
+  <!-- <navigator url='../teachers_ center/teachers_center' hover-class="none"></navigator> -->
+  <button class="refer" form-type='submit'>登录</button>
+  <view class="sign_in">
+    <view class="sign_in_l">已有账号？</view>
+    <navigator url='../register/register' hover-class="none">注册</navigator>
+  </view>
+
+</form>

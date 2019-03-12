@@ -1,0 +1,93 @@
+.topTabSwiper{
+  padding: 0 40px;
+  box-sizing: border-box;
+  display: flex;
+  height: 51px;
+  justify-content: space-between;
+  align-items: center;
+  width: 375px;
+}
+.tab{
+  float: left;
+  width: 50%;
+  font-size: 16px;
+  text-align: center;
+  padding: 10rpx 0;
+ }
+.topTabSwiper:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+.tabBorer{
+  border-bottom: 1px solid #61BD3B;
+  color: #61BD3B;
+}
+.swiper{
+width: 100%;
+}
+.swiper_con{
+  margin-top: 11px;
+  width: 94%;
+  margin-left: 3%;
+  height:163px; 
+  box-shadow:0 0 5px 3px #e7e7e7;
+  position: relative;
+}
+.image{
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+.content{
+  padding-left: 80px;
+  padding-top: 10px;
+}
+.name{
+   font-size: 16px;
+   color: #656565;
+   padding-top: 10px;
+}
+.math{
+   font-size: 16px;
+   color: #61BD3B;
+   padding-top: 10px;
+}
+.study{
+  font-size: 14px;
+  color: #989898;
+  padding-top: 7px;
+}
+.font{
+  font-size: 14px;
+  color: #656565;
+}
+.font_l{
+   font-size: 14px;
+  color: #FC0101;
+}
+.image_l{
+  width: 36px;
+  height: 36px;
+  z-index: 999;
+  position: absolute;
+  top:10px;
+  right: 5px;
+}
+.swiper_conn{
+  margin-top: 11px;
+  width: 94%;
+  margin-left: 3%;
+  height:163px; 
+  box-shadow:0 0 5px 3px #e7e7e7;
+  position: relative;
+  z-index: 555;
+}
+.image_r{
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  top:10px;
+  right: 5px;
+  z-index: 999;
+}

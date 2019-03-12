@@ -1,0 +1,10 @@
+<!--pages/my/my.wxml-->
+<view class="top">
+   <navigator class="clck" url='../student_register/student_register' hover-class="none">
+      <image  class="printt" src="../../img/Student.png"></image>
+   </navigator>
+
+   <navigator class="clck_l" url='../teachers_ center/teachers_center' hover-class="none">
+       <image  class="printt" src="../../img/Teacher.png"></image>
+   </navigator>
+</view>

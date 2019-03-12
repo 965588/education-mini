@@ -1,0 +1,40 @@
+<view class="page">
+  <view class="nav-son" >
+    <view class="nav-son_l" wx:for="{{nav}}" wx:key="">
+      <view class="pag" bindtap='openList' data-id='{{item.id}}' data-title="{{item.title}}">{{item.title}}</view>
+      <text>▼</text>
+    </view>
+    <!-- <view class="nav-son_l">
+      <view class="pag">家教科目</view>
+      <text>▼</text>
+    </view>
+    <view class="nav-son_l">
+      <view class="pag">家教科目</view>
+      <text>▼</text>
+    </view>
+    <view class="nav-son_l">
+      <view class="pag">家教科目</view>
+      <text>▼</text>
+    </view> -->
+  </view>
+  <view class="content">
+    <view class="content_l" >
+      <view class="class" wx:for="{{left}}"  data-id='{{item.id}}' bindtap='openLists'>{{item}}</view>
+      <!-- <view class="class">小学1</view>
+      <view class="class">小学2</view>
+      <view class="class">小学3</view>
+      <view class="class">小学4</view>
+      <view class="class">小学5</view> -->
+      
+    </view>
+    <view class="content_r">
+      <view>数学</view>
+      <view>数学1</view>
+      <view>数学2</view>
+      <view>数学3</view>
+      <view>数学4</view>
+      <view>数学5</view>
+    </view>
+  </view>
+
+</view>

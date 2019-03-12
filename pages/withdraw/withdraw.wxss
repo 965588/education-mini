@@ -1,0 +1,70 @@
+
+.top{
+  width: 100%
+}
+.wallet{
+  display: flex;
+  justify-content: center
+}
+.image{
+  width: 90px;
+  height: 77px;
+  margin-top: 46px;
+}
+.money{
+  width:180px;
+  height: 35px;
+  margin: 23px auto 88px auto;
+}
+.money_l{
+  float: left;
+  font-size: 44px;
+  color:#656565;
+}
+.font{
+  font-size: 24px;
+  color:#656565;
+}
+.refer{
+  width: 335px;
+  height: 44px;
+  background-color: #61BD3B;
+  margin-top: 40px;
+}
+.details{
+  color: #61BD3B;
+  font-size: 14px;
+  text-align: right;
+  margin-top: 46px;
+  padding: 0 25px;
+}
+.topp{
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+.top_l{
+  margin-top: 50px;
+  width: 335px;
+  height: 20px;
+  border-bottom: 1px solid #61BD3B;
+  font-size: 14px;
+  color: #656565;
+  display: flex;
+  justify-content: space-between;
+}
+.mone{
+  width: 250px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
+.mobile{
+  padding-left: 10px;
+}
+.account{
+  margin-top: 8px;
+  font-size: 11px;
+  color: #989898;
+  text-align: center;
+}

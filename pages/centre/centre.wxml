@@ -1,0 +1,222 @@
+<!--pages/centre/centre.wxml-->
+<form bindsubmit="formSubmit"> 
+  <view> 
+    <view class="top">
+      <view class="top_l">个人信息</view>
+      <view class="section"> 
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name">教员姓名</view>
+        </view>
+        <input class="inputt" name="name" value='{{line.name}}' placeholder="请输入学员姓名" />
+      </view>
+      <radio-group class="radio-group" bindchange="radioChange" name = "sex">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name">教员性别</view>
+        </view>
+        <label class="radio" >
+          <view class="radio_l">
+            <view class="radio_l_l">男</view>
+            <radio value="1" checked="{{item.checked}}" checked="true"/>
+          </view>
+          <view class="radio_r">女</view>
+          <radio value="2" checked="{{item.checked}}" />
+        </label>
+      </radio-group>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 手机号</view>
+        </view>
+        <input class="inputt"  name="tel" value='{{line.tel}}' placeholder="请输入手机号"  />
+      </view>
+
+     
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 验证码</view>
+        </view>
+
+        <view class="choice">
+          <input class="inputt" name="varify" placeholder="请输入验证码"  />
+          <view class="auth">发送验证码</view>
+        </view>
+      </view>
+
+       <view class="section">
+        <view class="section_l"> 
+          <view class="dian">* </view>
+          <view class="name">就读/毕业学校</view>
+        </view>
+        <input class="inputt"  name="graduation" placeholder="请输入就读/毕业学校"  />
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 年级 </view>
+        </view>
+        <picker class="choice_l" bindchange="class" value="{{index}}" range="{{grade}}">
+          <view class="picker">
+            <input class="option"  name="grade" placeholder="请输入年级" value="{{class}}"/>
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view> 
+          <view class="name"> 科目</view>
+        </view>
+        <picker class="choice_l" bindchange="subjects" value="{{0}}" range="{{course}}">
+          <view class="picker">
+            <input class="option"  name="coures" placeholder="请输入科目" value='{{coures}}'/>
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 授课时间</view>
+        </view>
+        <picker class="choice_l"  bindchange="time" value="{{0}}" range="{{give}}">
+          <view class="picker">
+            <input class="option"  name='time' placeholder="请输入授课时间" value="{{time}}"/>
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 授课地点</view>
+        </view>
+        <picker class="choice_l" bindchange="site" value="{{0}}" range="{{area}}">
+          <view class="picker">
+            <input class="option" value='{{line.site}}' name="site" placeholder="请输入授课地点" value='{{site}}'/>
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 授课方式</view>
+        </view>
+        <picker class="choice_l" bindchange="vay" value="{{0}}" range="{{mode}}">
+          <view class="picker">
+            <input class="option" value='{{line.vay}}' name="vay" placeholder="请输入授课方式" value="{{vay}}"/>
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+       <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 授课费用</view>
+        </view>
+
+        <view class="choice">
+          <input class="money" value='{{line.charge}}' name="charge" placeholder="请输入授课费用"  />
+          <view class="authh">元</view>
+        </view>
+      </view>
+
+
+      <view class="section_r_r">
+        <view class="section_l_r">
+          <view class="diann">* </view>
+          <view class="name"> 详细地址</view>
+        </view>
+        <input class="inpu" value='{{line.address}}' name="address" placeholder="请输入详细地址" />
+      </view>
+    </view>
+
+    <view>
+      <view class="base">
+        <view class="top_l">其他信息</view>
+        <view class="section_r_r">
+          <view class="section_l_r">
+            <view class="diann">* </view>
+            <view class="name">身份信息</view>
+          </view>
+          <view class="print">
+
+            <view class="detail_img">
+              <view class="view_img" bindtap='images'>
+                <image src="../../img/camera.png"></image>
+              </view>
+              <view class="ll">上传身份证正面</view>
+            </view>
+            <view class="detail_img">
+              <view class="view_img">
+                <image src="../../img/camera.png"></image>
+              </view>
+              <view class="ll">上传身份证反面</view>
+            </view>
+          </view>
+        </view>
+
+
+        <view class="identity">
+          <view class="section_l_r">
+            <view class="diann">* </view>
+            <view class="name">资质证书</view>
+          </view>
+          <view class="print">
+            <view class="detail_img">
+              <view class="view_img">
+                <image src="../../img/camera.png"></image>
+              </view>
+              <view class="ll">上传身份证正面</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="identity">
+          <view class="section_l_r">
+            <view class="diann">* </view>
+            <view class="names">学历/学位证书</view>
+          </view>
+          <view class="print">
+
+            <view class="detail_img">
+              <view class="view_img">
+                <image src="../../img/camera.png"></image>
+              </view>
+              <view class="ll">上传学历证书</view>
+            </view>
+            <view class="detail_img">
+              <view class="view_img">
+                <image src="../../img/camera.png"></image>
+              </view>
+              <view class="ll">上传学位证书</view>
+            </view>
+          </view>
+        </view>
+
+        <view class="identity">
+          <view class="section_l_r">
+            <view class="diann">* </view>
+            <view class="name"> 教员描述</view>
+          </view>
+          <view class="section">
+           <input class="inpu" value='{{line.selfdescription}}' name="selfdescription" placeholder="请输入详细地址" />
+          </view>
+        </view>
+
+      </view>
+    </view>
+    <button class="refer" formType="submit">去认证</button>
+  </view>
+</form>

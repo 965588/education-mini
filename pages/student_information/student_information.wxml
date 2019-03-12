@@ -1,0 +1,57 @@
+<view class="top">
+  <view class="content">
+    <view class="content_top">学员信息</view>
+    <view class="content_title">
+      <text>订单编号</text>
+      <text>20190118</text>
+    </view>
+    <view class="content_title">
+      <text>学员年级 </text>
+      <text>{{temp.grade}}</text>
+    </view>
+    <view class="content_title">
+      <text>学员性别</text>
+      <text>{{temp.sex}}</text>
+    </view>
+    <view class="content_title">
+      <text>手机号</text>
+      <text>{{temp.phone}}</text>
+    </view>
+    <view class="content_title">
+      <text>所学科目</text>
+      <text>{{temp.subject}}</text>
+    </view>
+    <view class="content_title">
+      <text>授课区域</text>
+      <text>{{temp.district}}</text>
+    </view>
+    <view class="content_title">
+      <text>授课时间</text>
+      <text>{{temp.cycle}}</text>
+    </view>
+    <view class="content_title">
+      <text>学员水平</text>
+      <text>20190118</text>
+    </view>
+    <view class="content_title">
+      <text>家教费用</text>
+      <text>{{temp.range}}</text>
+    </view>
+  </view>
+  <view class="tail">
+    <view class="content_top">教员要求</view>
+    <view class="content_title">
+      <text>教员资质</text>
+      <text>20190118</text>
+    </view>
+    <view class="content_title">
+      <text>教员性别</text>
+      <text>{{temp.teachersex}}</text>
+    </view>
+    <view class="content_title">
+      <text>具体要求</text>
+      <text>{{temp.teachertype}}</text>
+    </view>
+  </view>
+  <button class="refer" bindtap="setDisabled" data-sid='{{temp.id}}'>在线预约</button> 
+</view>

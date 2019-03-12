@@ -1,0 +1,96 @@
+<!--index.wxml-->
+
+<view class="location">{{address}}</view>
+<view class="top">
+  <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" checked="{{indicatorDots}}" interval="{{interval}}" circular="{{circular}}" duration="{{duration}}" class='bigbox'>
+    <block wx:for="{{imgUrls}}" wx:key=''>
+      <swiper-item class="carousel" bindtap='aaa'>
+        <image src="{{item.image_url}}" class="slide-image" width="355" height="150" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="coures">
+    <view class="coures1">
+      <image bindtap='teacher_title' wx:for="{{imgThis}}" wx:key='' src="{{item.url}}" data-id='{{item.id}}'></image>
+    </view>
+
+  </view>
+  <view class="contact">
+    <view class='image_l'>
+      <image src="../../img/1.png" class="other"></image>
+    </view>
+    <view class='text'>客服热线：{{hot}}</view>
+    <view class='image_r' bindtap='phonecallevent' data-tel='{{hot}}'>
+      <image src="../../img/tel.png" class="other1"></image>
+    </view>
+  </view>
+  <view class="seek">
+    <view class="seek_l">找老师</view>
+  </view>
+  <view class="datum">
+    <view class="datum_l">
+      <view class="datum_l_l">{{teacher}}</view>
+      <view class="datum_l_r">入驻老师</view>
+    </view>
+    <view class="datum_l">
+      <view class="datum_l_l">{{pupil}}</view>
+      <view class="datum_l_r">服务学员</view>
+    </view>
+    <view class="datum_1">
+      <view class="datum_l_l">444444</view>
+      <view class="datum_l_r">驻点城市</view>
+    </view>
+  </view>
+  <view class="make">
+    <view class="make_l">
+      <view class="make_l_l">
+        <image src="../../img/teacher1.png"></image>
+        <view class="my_teacher">我是老师</view>
+      </view>
+      <view class="">
+        <view class="login">
+          <navigator class="login_1" url='../register/register' hover-class="none">注册/</navigator>
+          <navigator url='../teacher_login/teacher_login' hover-class="none">登录</navigator>
+        </view>
+        <view class="scudent">
+          <navigator class="login_1" url='../student_library/student library' hover-class="none">学员库</navigator>
+        </view>
+      </view>
+    </view>
+    <view class="make_r">
+      <view class="make_l_l">
+        <image src="../../img/teacher1.png"></image>
+        <view class="my_teacher">我是学生</view>
+      </view>
+      <view class="">
+        <view class="login" bindtap='family_teacher'>
+          快速请家教
+        </view>
+        <view class="scudent" bindtap='teacher'>
+          教员库
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="wire"></view>
+  <view class="excellent">优秀老师</view>
+
+  <block wx:for="{{temp}}" wx:key="">
+    <navigator url='../good_teacher/good_teacher?id={{item.id}}' hover-class="none">
+      <view class='excellent_teacher' style='margin:80rpx 0'>
+        <view class='excellent_teacher_l'>
+          <image src="../../img/touxiang.jpg" style='width:150rpx;height:150rpx'></image>
+          <view class='side'>
+            <view>
+              <text class="side_l">{{item.name}}</text>
+              <text class="side_r">{{item.identity}}</text>
+            </view>
+            <view>{{item.subject}}</view>
+            <view>{{item.graduation}}</view>
+          </view>
+        </view>
+      </view>
+    </navigator>
+  </block>
+  <image src="../../img/contact.png" class="service"></image>
+</view>

@@ -1,0 +1,13 @@
+<view class="top">
+  <view class="wallet">
+    <image class="image" src='../../img/Wallet.png'></image>
+  </view>
+  <view class="money">
+    <view class='f-money'>
+      <text class="money_l">500.00</text>
+      <text class="font">元</text>
+    </view>
+  </view>
+  <navigator url='../recharge/recharge'><button class="refer" >充值</button></navigator>
+  <navigator url='../withdraw/withdraw'><button class="refe1">提现</button></navigator>
+</view>

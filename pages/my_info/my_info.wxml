@@ -1,0 +1,30 @@
+<form bindsubmit="submitForm">
+<view  class="top"  wx:key="">
+  <view class="content">  
+     <view class="top_content">预约信息</view>
+     <view class="count"><text>学员姓名</text><text>{{temp.name}}</text></view>
+     <view class="count"><text>学员性别</text>
+     <text wx:if="{{temp.sex}} == 1">男</text>
+     <text wx:else>女</text>
+     </view>
+     <view class="count"><text>手机号</text><text>{{temp.phone}}</text></view>
+     <view class="count"><text>年级</text><text>{{temp.grade}}</text></view>
+     <view class="count"><text>科目</text><text>{{temp.subject}}</text></view>
+     <view class="count"><text>授课时间</text><text>{{temp.cycle}} </text></view>
+     <view class="count"><text>授课区域</text><text>{{temp.district}}</text></view>
+     <view class="countt"><text>详细地址</text></view>
+     <view class="countn">{{temp.address}}</view>
+    
+  </view>
+  <view class="teacher">
+     <view class="top_content">家教要求</view>
+     <view class="count"><text>教师性别</text><text wx:if="{{temp.teachersex}} == 1">男</text><text wx:else>女</text></view>
+     <view class="count"><text>课酬费</text><text >{{temp.range}}</text></view>
+     <view class="count"><text>老师类型</text><text>{{temp.teachertype}}</text></view>
+     
+     <view class="countt"><text>要求</text></view>
+     <view class="countn">{{temp.text}}</view>
+  </view>
+  <button class="refer" formType="submit" bindtap="aaa">修改信息</button>
+</view>
+</form>

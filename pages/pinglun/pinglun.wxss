@@ -1,0 +1,16 @@
+/* pages/pinglun/pinglun.wxss */
+.tex{
+  width: 94%;
+  margin:60rpx 3% 0 3%;
+  border: 1rpx solid seagreen;
+  text-indent:35px;
+  line-height:50rpx
+}
+.refer{
+  width: 80%;
+  height: 88rpx;
+  background-color: #61BD3B;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+  color: #fff;
+}

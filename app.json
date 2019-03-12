@@ -1,0 +1,76 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/education/education",
+    "pages/teacher/teacher",
+    "pages/my/my",
+    "pages/centre/centre",
+    "pages/register/register",
+    "pages/teacher_login/teacher_login",
+    "pages/teachers_ center/teachers_center",
+    "pages/money/money",
+    "pages/my_make/my_mke",
+    "pages/my_order/my_order",
+    "pages/my_rating/my_rating",
+    "pages/change_password/change_password",
+    "pages/recharge/recharge",
+    "pages/withdraw/withdraw",
+    "pages/show_details/show_details",
+    "pages/student_register/student_register",
+    "pages/student_login/student_login",
+    "pages/student_center/student_center",
+    "pages/student_make/student_make",
+    "pages/my_teacher/my_teach",
+    "pages/my_info/my_info",
+    "pages/my_appraise/my_appraise",
+    "pages/authenticated/authenticated",
+    "pages/good_teacher/good_teacher",
+    "pages/teachel/teachel",
+    "pages/student_library/student library",
+    "pages/student_information/student_information",
+    "pages/student_pass/student_pass",
+    "pages/booking_details/booking_details",
+    "pages/teacher_details/teacher_details",
+    "pages/pinglun/pinglun",
+    "pages/password_hint/password_hint",
+    "pages/order/order"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#61BD3B",
+    "navigationBarTitleText": "首页",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "black",
+    "list": [
+      {
+        "selectedIconPath": "img/home1.png",
+        "iconPath": "img/home2.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "img/Tutor1.png",
+        "iconPath": "img/Tutor2.png",
+        "pagePath": "pages/education/education",
+        "text": "请家教"
+      },
+      {
+        "selectedIconPath": "img/Choose1.png",
+        "iconPath": "img/Choose.png",
+        "pagePath": "pages/teachel/teachel",
+        "text": "请老师"
+      },
+      {
+        "selectedIconPath": "img/Personalcenter1.png",
+        "iconPath": "img/Personalcenter2.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>预约我的</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>我的预约</view>
+</view>
+<swiper current="{{currentData}}" class='swiper' style="height:6000px;" duration="300" bindchange="bindchange">
+  <swiper-item>
+  <block>
+ 
+      <view class='swiper_conn'  wx:for="{{tem}}" wx:key="">
+       <navigator url='../booking_details/booking_details?id={{item.tid}}&status={{item.status}}' hover-class="none">
+         <image class="image" src='../../img/touxiang.jpg'></image>
+          <view class="content">
+            <view class="name">{{item.name}}</view>
+            <view class="name">ID：{{item.nameID}}</view>
+            <view class="math">{{item.grade}}{{item.subject}}</view>
+            <view class="study">授课区域：<text class='font'>{{item.district}}</text></view>
+            <view class="study">{{item.graduation}}：<text class='font'>{{item.major}}</text></view>
+          </view>
+          <image class="image_r" src='../../img/button4.png'></image> 
+          </navigator>
+      </view>
+   
+   </block>
+  </swiper-item> 
+  <swiper-item>
+  
+      <view class='swiper_con' wx:for="{{temp}}" wx:key="">
+      <navigator url='../booking_details/booking_details?id={{item.tid}}' hover-class="none">
+          <image class="image" src='../../img/touxiang.jpg'></image>
+          <view class="content">
+            <view class="name">{{item.name}}</view>
+            <view class="name">ID：{{item.nameID}}</view>
+            <view class="math">{{item.grade}}{{item.subject}}</view>
+            <view class="study">授课区域：<text class='font'>{{item.district}}</text></view>
+            <view class="study">
+            {{item.graduation}}：<text class='font'>{{item.major}}</text></view>
+          </view>
+          <image class="image_l" src='../../img/button4.png'></image> 
+          </navigator>
+      </view>
+  
+  </swiper-item>
+</swiper>

@@ -1,0 +1,36 @@
+<view class="top">
+   <view class="top_l"> 
+     <view class="contes">
+       <image class="image" src="../../img/touxiang.jpg"></image>
+       <view class="name">张先生</view>
+       <view class="message">
+          <text>新城区</text><text class="message_l">预约课程：小学数学</text><text>预约时间：2019-1-1</text>
+       </view>
+       <view class="comment">家长评语：老师很有责任心，教学方式很新颖，孩子哼喜欢，</view>
+     </view> 
+       <view class="auditor">
+          <image class="auditor_l" src="../../img/touxiang.jpg"></image>
+          <view class="state">
+            <view>ID20140114</view>
+            <view class="state_l">审核状态：待审核</view>
+          </view>
+       </view>
+   </view>
+   <view class="top_l">
+      <view class="contes">
+       <image class="image" src="../../img/touxiang.jpg"></image>
+       <view class="name">张先生</view>
+       <view class="message">
+          <text>新城区</text><text class="message_l">预约课程：小学数学</text><text>预约时间：2019-1-1</text>
+       </view>
+       <view class="comment">家长评语：老师很有责任心，教学方式很新颖，孩子哼喜欢，</view>
+  </view>
+       <view class="auditor">
+          <image class="auditor_l" src="../../img/touxiang.jpg"></image>
+          <view class="state">
+            <view>ID20140114</view>
+            <view class="state_l">审核状态：待审核</view>
+          </view>
+       </view>
+   </view>
+</view>

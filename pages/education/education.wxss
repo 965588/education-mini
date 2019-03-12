@@ -1,0 +1,159 @@
+/* pages/education/education.wxss */
+
+.top{
+
+  height: 545px;
+  margin: 0 20rpx;
+  box-sizing: border-box;
+  box-shadow:0 0 10rpx 6rpx  #e7e7e7;
+  margin-top: 30rpx;
+  border:1rpx solid #e7e7e7; 
+  border-radius: 10px  
+}
+.top_l{
+   width:100%;
+   height: 100rpx;
+   text-align: center;
+   line-height: 100rpx;
+   color: #61BD3B;
+   font-size: 36rpx;
+   background-color: #F2FFED
+}
+
+.section, .radio-group{
+  padding: 0 20rpx;
+   border-bottom: 2rpx solid #E7E7E7;
+   height: 100rpx;
+   display: flex;
+   justify-content: space-between;
+   align-items: center
+}
+.section_l{
+  line-height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.dian{
+  color: #FB1414;
+  margin-top: 6rpx
+}
+.name, .name_l{
+  color: #656565;
+  font-size: 28rpx;
+  width: 140rpx;
+  margin-left: 10rpx;
+}
+.inputt{
+  width: 200rpx;
+  font-size: 28rpx;
+  color: #656565;
+  text-align: end;
+}
+.radio{
+  font-size: 28rpx;
+  color: #656565;
+}
+.radio_l, .radio_r,.radio_l_l{
+  float: left
+}
+.radio_l_l, .radio_r{
+  color: #666666;
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+
+
+.choice_l{
+  color: #656565;
+  font-size: 28rpx;
+  background: white;
+}
+.choice_l::after{
+  border: none;
+}
+.print{
+  width: 24rpx;
+  height: 18rpx;
+}
+.section_r_r{
+  margin: 0 20rpx;
+   height: 200rpx;
+}
+.section_l_r{
+  height: 100rpx;
+  display: flex;
+  align-items: center
+}
+.diann{
+  color:#FB1414;
+  margin-top: 20rpx 
+}
+.inpu{
+  color: #656565;
+  font-size: 28rpx
+}
+.picker{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.option{
+  padding-right: 20rpx; 
+  text-align: end;
+  font-size: 28rpx;
+  color: #656565;
+  disabled:true;
+}
+.printt{
+  width: 24rpx;
+  height: 18rpx;
+  margin-top: 18rpx
+}
+.top_r{
+  height: 600rpx;
+   margin: 0 20rpx;
+  box-sizing: border-box;
+  box-shadow:0 0 10rpx 6rpx  #e7e7e7;
+  margin-top: 10rpx;
+  border:1rpx solid #e7e7e7;
+  border-radius:20rpx;
+}
+.name_l{
+  color: #656565;
+  font-size: 28rpx;
+  width: 140rpx;
+}
+text{
+  color:#FB1414;
+  font-size: 22rpx;
+  margin-left: 14rpx
+}
+.refer{
+  width: 80%;
+  height: 88rpx;
+  background-color: #61BD3B;
+  margin-top: 80rpx;
+  margin-bottom: 80rpx;
+  color: #fff;
+}
+.choice{
+  display: flex;
+  justify-content: space-between
+}
+.choice>image{
+  width: 140rpx;
+  height:48rpx;
+}
+.picker{
+}
+.btntext{
+  width: 140rpx;
+  height: 46rpx;
+  border: 1px solid #61BD3B;
+  color: #61BD3B;
+  font-size: 22rpx;
+  text-align: center;
+  line-height: 46rpx;
+}

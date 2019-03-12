@@ -1,0 +1,9 @@
+.clck, .clck_l{
+  display: flex;
+  justify-content: center;
+}
+.printt{
+  width: 130px;
+  height: 130px;
+  margin-top: 76px;
+}

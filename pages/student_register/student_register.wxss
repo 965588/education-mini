@@ -1,0 +1,88 @@
+/* pages/register/register.wxss */
+.top{
+  margin-top: 30%;
+  width: 100%;
+  height: 200px; 
+  padding:0 5% 0 8%;
+  box-sizing: border-box;
+}
+.mobile_l{
+  width:95%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between 
+}
+.mobile {
+  width: 89%;
+  font-size: 14px;
+  border-bottom: 1px solid #989898;
+}
+.mobile_r{
+  width:95%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between
+}
+.auth_l{
+  width: 60%;
+  font-size: 14px;
+  border-bottom: 1px solid #989898;
+}
+
+.genre{
+  width: 16px;
+  height: 16px;
+  float: left;
+  margin-top: 4px;
+}
+.password_r{
+  width: 78%;
+  font-size: 14px;
+  border-bottom: 1px solid #989898;
+}
+.password>image{
+  width: 17px;
+  height: 9px;
+}
+.choice>image{
+  width: 70px;
+  height:24px;
+}
+
+.radio{
+  display: flex;
+  justify-content: center
+}
+
+.radio_l{
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+} 
+.radio_l_l{
+  font-size: 12px;
+  color:#656565; 
+  margin-top: 8px;
+}
+.refer{
+  width: 90%;
+  height: 44px;
+  background-color: #61BD3B;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+.sign_in{
+  width: 140px;
+  height: 16px;
+  margin: 0 auto;
+  font-size: 14px;
+  text-align: center;
+}
+.sign_in_l{
+  float: left;
+  color: #656565;
+}
+navigator{
+  color: #f40;
+}

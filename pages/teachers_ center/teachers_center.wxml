@@ -1,0 +1,93 @@
+<!--pages/teachers_ center/teachers_center.wxml-->
+<view class="top">
+  <view class="auditor">
+    <image class="auditor_l" src="../../img/touxiang.jpg"></image>
+    <view class="state">
+      <view>ID:{{temp.nameID}}</view>
+      <view class="state_l">审核状态：{{temp.status}}</view>
+    </view>
+
+  </view>
+
+  <navigator class="login_1" url='../money/money' hover-class="none">
+    <view class="money">
+      <view class="common">
+        <image class="money_l" src="../../img/money.png"></image>
+        <view class="money_state">
+          <view class="money_state_l">余额：</view>
+          <view class="money_state_r">500</view>
+        </view>
+      </view>
+      <image class="auditor_r" src="../../img/interface-arrowright拷贝6.png"></image>
+    </view>
+  </navigator>
+
+  <view class="content">
+    <navigator url='../my_make/my_mke' hover-class="none">
+      <view class="subscribe">
+        <view class="common">
+          <image class="money_l" src="../../img/appoint.png"></image>
+          <view class="my_subscribe">我的预约</view>
+        </view>
+        <image class="my_subscribe_image" src="../../img/interface-arrowright拷贝6.png"></image>
+      </view>
+    </navigator>
+
+    <navigator url='../my_order/my_order' hover-class="none">
+      <view class="subscribe">
+        <view class="common">
+          <image class="money_l" src="../../img/教员个人中心/Order.png"></image>
+          <view class="my_subscribe">我的订单</view>
+        </view>
+        <image class="my_subscribe_image" src="../../img/interface-arrowright拷贝6.png"></image>
+      </view>
+    </navigator>
+
+    <navigator url='../authenticated/authenticated' hover-class="none">
+      <view class="subscribe" bindtap='subscribe'>
+        <view class="common">
+          <image class="money_l" src="../../img/教员个人中心/Information.png"></image>
+          <view class="my_subscribe">个人信息</view>
+        </view>
+        <view class="common">
+        <view class="attestation">待认证</view>
+        <image class="my_subscribe_image" src="../../img/interface-arrowright拷贝6.png"></image>
+        </view>
+      </view>
+    </navigator>
+
+    <navigator url='../my_rating/my_rating' hover-class="none">
+      <view class="subscribe">
+        <view class="common">
+          <image class="money_l" src="../../img/教员个人中心/Evaluation.png"></image>
+          <view class="my_subscribe">我的评价</view>
+        </view>
+        <image class="my_subscribe_image" src="../../img/interface-arrowright拷贝6.png"></image>
+      </view>
+    </navigator>
+
+  </view>
+
+  <view class="amend">
+    <navigator url='../change_password/change_password' hover-class="none">
+      <view class="subscribe">
+        <view class="common">
+          <image class="money_l" src="../../img/appoint.png"></image>
+          <view class="my_subscribe">修改密码</view>
+        </view>
+        <image class="my_subscribe_image" src="../../img/interface-arrowright拷贝6.png"></image>
+      </view>
+    </navigator>
+
+    <navigator url='../education/education' hover-class="none">
+      <view class="subscribe">
+        <view class="common">
+          <image class="money_l" src="../../img/教员个人中心/Order.png"></image>
+          <view class="my_subscribe">退出系统</view>
+        </view>
+        <image class="my_subscribe_image" src="../../img/interface-arrowright拷贝6.png"></image>
+      </view>
+    </navigator>
+  </view>
+
+</view>

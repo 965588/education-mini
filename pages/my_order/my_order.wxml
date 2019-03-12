@@ -1,0 +1,15 @@
+<view>
+    <view class='swiper_con'>
+          <image class="image" src='../../img/touxiang.jpg'></image>
+          <view class="content">
+            <view class="name">学员姓名：{{temp.name}}</view>
+            <view class="name">学员性别：{{temp.sex}}</view>
+            <view class="math">{{temp.grade}}{{temp.subject}}</view>
+            <view class="study">授课区域：<text class='font'>{{temp.district}}</text></view>
+            <view class="study">课时费：<text class='font_l'>{{temp.range}}/小时（具体商议）</text></view>
+            <view class="study">上课时间：<text class='font'>{{temp.cycle}}</text></view>
+            <view class="study">学员地址：<text class='font'>{{temp.address}}</text></view>
+            <view class="study">发布日期：<text class='font'>{{temp.createtime}}</text></view>
+          </view> 
+      </view>
+</view>

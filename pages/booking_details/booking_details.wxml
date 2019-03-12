@@ -1,0 +1,83 @@
+<form bindsubmit="submitForm">
+<view  wx:key="">
+      <view class='swiper_con'>
+          <image class="image" src='../../img/touxiang.jpg'></image>
+          <view class="content">
+            <view class="name">{{temp.name}}<text class="school">({{temp.certificate}})</text></view>
+            <view class="name">ID：{{temp.nameID}}</view>
+            <view class="study">最近登录时间：<text class='font'>2019-1-1</text></view>
+            <view class="study">
+               <view class="study_l">浏览次数：<text class='font'>三次</text></view>
+               <view>成功记录：<text class='font'>0</text></view>
+            </view>
+          </view> 
+      </view>
+
+
+
+   <view  class="tops">
+    <view class="contents">
+      <view class="top_content">基本信息</view>
+      <view class="count"><text>姓名</text><text>{{temp.name}}</text></view>
+      <view class="count"><text>性别</text><text>{{temp.sex}}</text></view>
+      <view class="count"><text>籍贯</text><text>{{temp.place}}</text></view>
+      <view class="count"><text>就读/毕业学校</text><text>{{temp.graduation}}</text></view>
+      <view class="count"><text>专业</text><text>{{temp.major}}</text></view>
+      <view class="count"><text>目前身份</text><text>{{temp.identity}} </text></view>
+      <view class="count"><text>家庭住址</text><text>{{temp.address}}</text></view>
+      <view class="count"><text>学校位置</text><text>{{temp.schooladd}}</text></view>
+    </view>
+    <view class="teacher">
+      <view class="top_content">家教信息</view>
+      <view class="countt"><text>授课科目</text></view>
+      <view class="countn">{{temp.subject}}</view>
+      <view class="countt"><text>授课区域</text></view>
+      <view class="countn">{{temp.district}}</view>
+      <view class="countt"><text>所获证书</text></view>
+      <view class="countn">{{temp.certificate}}</view>
+      <view class="countt"><text>辅导方式</text></view>
+      <view class="countn">{{temp.fmode}}</view>
+      <view class="countt"><text>自我描述</text></view>
+      <view class="countnn">{{temp.selfdescription}}</view>
+      <view class="countt"><text>家教经验</text></view>
+      <view class="countn">{{temp.suffer}}</view>
+       <view class="countt"><text>课时费用</text><text class="norm">参考标准</text></view>
+      <view class="countn">{{temp.charge}}</view>
+     
+    </view>
+    
+  </view>
+
+
+
+
+      
+
+  <view class="top">
+   <view class="teach">
+       <view class="top_content">家教信息</view>
+     <view class="cont">
+       <image class="images" src="../../img/touxiang.jpg"></image>
+       <view class="names">张先生</view>
+       <view class="message">
+          <text>新城区</text><text class="message_l">预约课程：小学数学</text><text>预约时间：2019-1-1</text>
+       </view>
+       <view class="comment">家长评语：老师很有责任心，教学方式很新颖，孩子哼喜欢，</view>
+     </view>
+    <view class="cont">
+       <image class="images" src="../../img/touxiang.jpg"></image>
+       <view class="names">张先生</view>
+       <view class="message">
+          <text>新城区</text><text class="message_l">预约课程：小学数学</text><text>预约时间：2019-1-1</text>
+       </view>
+       <view class="comment">家长评语：老师很有责任心，教学方式很新颖，孩子哼喜欢，</view>
+     </view>
+   </view> 
+  </view>
+      <!-- <navigator url='../centre/centre'></navigator>  -->
+    <!-- <navigator url='../order/order' hover-class="none">   -->
+    <view class="refer" bindtap='tijiao' formType="submit" data-tid='{{temp.id}}' wx:if="{{status == 1}}">同意预约</view>
+    <view class="refer" bindtap='tijiao' formType="submit" data-tid='{{temp.id}}' wx:else>确认预约</view>  
+    <!-- </navigator> -->
+</view>
+</form>

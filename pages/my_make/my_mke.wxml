@@ -1,0 +1,98 @@
+<view class="ll">
+  <view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}' data-current="0" bindtap='checkCurrent'>预约我的</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}' data-current="1" bindtap='checkCurrent'>我的预约</view>
+  </view>
+  <swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+    <swiper-item>
+      <block>
+        <view class='swiper_con' wx:for="{{tas}}" wx:key="" >
+          <navigator url='../teacher_details/teacher_details?id={{item.sid}}&status={{item.status}}' hover-class="none">
+
+            <image class="image" src='../../img/touxiang.jpg'></image>
+            <view class="content">
+              <view class="name">姓名：{{item.name}}</view>
+              <view class="name">学员性别：{{item.sex}}</view>
+              <view class="math">{{item.grade}}{{item.subject}}</view>
+              <view class="study">授课区域：
+                <text class='font'>{{item.district}}</text>
+              </view>
+              <view class="study">课时费：
+                <text class='font_l'>{{item.range}}/小时（具体商议）</text>
+              </view>
+              <view class="study">上课时间：
+                <text class='font'>{{item.cycle}}</text>
+              </view>
+              <view class="study">学员地址：
+                <text class='font'>{{item.address}}</text>
+              </view>
+              <view class="study">发布日期：
+                <text class='font'>{{item.createtime}}</text>
+              </view>
+            </view>
+            <image class="image_l" src='../../img/0df27fce814a2a698307b9e716a9c94.png'></image>
+
+          </navigator>
+        </view>
+      </block>
+    </swiper-item>
+    <swiper-item>
+      <view class='swiper_con' wx:for="{{taas}}" wx:key="">
+      <navigator url='../teacher_details/teacher_details?id={{item.sid}}&status={{item.statdus}}' hover-class="none">
+        <image class="image" src='../../img/touxiang.jpg'></image>
+        <view class="content">
+          <view class="name">姓名：{{item.name}}</view>
+          <view class="name">学员性别：{{item.sex}}</view>
+          <view class="math">{{item.grade}}{{item.subject}}</view>
+          <view class="study">授课区域：
+            <text class='font'>{{item.district}}</text>
+          </view>
+          <view class="study">课时费：
+            <text class='font_l'>{{item.range}}/小时（具体商议）</text>
+          </view>
+          <view class="study">上课时间：
+            <text class='font'>{{item.cycle}}</text>
+          </view>
+          <view class="study">学员地址：
+            <text class='font'>{{item.address}}</text>
+          </view>
+          <view class="study">发布日期：
+            <text class='font'>{{item.createtime}}</text>
+          </view>
+        </view>
+        <image class="image_l" src='../../img/0df27fce814a2a698307b9e716a9c94.png'></image>
+      </navigator>
+      </view>
+
+
+      <view class='swiper_con'>
+        <image class="image" src='../../img/touxiang.jpg'></image>
+        <view class="content">
+          <view class="name">姓名：1231456</view>
+          <view class="name">学员性别：女</view>
+          <view class="math">小学数学</view>
+          <view class="study">学习目的：
+            <text class='font'>提高英语水平</text>
+          </view>
+          <view class="study">授课区域：
+            <text class='font'>长安区</text>
+          </view>
+          <view class="study">课时费：
+            <text class='font_l'>40-80/小时（具体商议）</text>
+          </view>
+          <view class="study">上课时间：
+            <text class='font'>一周三次 每周两小时</text>
+          </view>
+          <view class="study">学员地址：
+            <text class='font'>西安雁塔区长安南路</text>
+          </view>
+          <view class="study">发布日期：
+            <text class='font'>2019-1-1
+            </text>
+          </view>
+        </view>
+        <image class="image_l" src='../../img/0df27fce814a2a698307b9e716a9c94.png'></image>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

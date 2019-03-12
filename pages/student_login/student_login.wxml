@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit">
+    <view class="top">
+        <view class="mobile_l"> 
+            <image  class="genre" src="../../img/Phone.png"></image>
+            <input class="mobile" name="tel" placeholder="请输入手机号" value='15769203576' />
+        </view>
+        
+        
+        
+        <view class="mobile_r">
+            <image  class="genre" src="../../img/password.png"></image>
+            <input class="password_r" name="pwd" placeholder="请输入密码" value='1234567' />
+            <view class="password">
+                <image src="../../img/display.png"></image>
+            </view>
+        </view>
+      </view>
+      <view class="forget">
+       <navigator url='../test/test' hover-class="none">
+           <view class="radio_l_l">忘记密码</view>
+        </navigator>
+        <navigator url='../test/test' hover-class="none">
+           <view class="radio_l_l">手机验证码登录</view>
+        </navigator>
+      </view>  
+
+     <!-- <navigator url='../student_center/student_center' hover-class="none">
+        <button class="refer" bindtap="setDisabled">登录</button>
+     </navigator> -->
+     <button class="refer" form-type='submit'>登录</button>
+     <view class="sign_in"> 
+        <view class="sign_in_l">已有账号？</view>
+        <navigator url='../student_register/student_register' hover-class="none">注册</navigator>
+     </view> 
+    
+</form>
+
+
+   

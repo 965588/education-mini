@@ -1,0 +1,233 @@
+.location{
+  margin-top: 10px;
+  text-align: center;
+  font-size: 15px;
+  color: #656565;
+}
+.bigbox{
+  padding: 10px 10px;
+}
+.carousel image{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px
+}
+.coures{
+  padding: 0 5px;
+}
+.coures1, .coures2{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap 
+   
+}
+.coures image{
+   width: 75px;
+   height: 60px;
+
+}
+.contact{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50rpx 10px;
+  box-sizing: border-box;
+  background-color: #F2FFED;
+  margin-top: 30rpx;
+}
+.image_l{
+  width: 26px;
+  height: 39px;
+}
+.image_l>image{
+  width: 100%;
+  height: 100%
+}
+.image_r{
+  width: 15px;
+  height: 18px
+}
+.image_r>image{
+  width: 100%;
+  height: 100%
+}
+.text{
+  font-size:32rpx;
+  color: #282828;
+  margin-left: -176rpx
+}
+.seek{
+  width: 100%;
+  height: 50px;
+  position: relative
+}
+.seek_l{
+  text-align: center;
+  line-height: 50px;
+  font-size:16px;
+  color:#656565
+}
+.seek_r{
+  width: 35px;
+  height: 14px;
+  font-size: 11px;
+  position: absolute;
+  top:17px;
+  right:0px;
+  color:#656565
+}
+.datum{
+  width: 100%;
+  height: 162rpx;
+  border:1px solid #e7e7e7;
+  padding: 0 15px;
+  box-sizing: border-box
+}
+.datum{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.datum_l{
+  width: 120r;
+  height: 50px;
+  float:left
+}
+.datum_l_l{
+  color: #61BD3B;
+  font-size: 36rpx;
+  text-align: center
+}
+.datum_l_r{
+  color: #656565;
+  font-size: 12px;
+  margin-top: 8px
+}
+.make{
+  widht:100%;
+  height: 130px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.make_l, .make_r{
+  width: 170px;
+  height: 100px;
+  box-shadow:0 0 5px 3px  #e7e7e7;
+  border:1px solid #e7e7e7;
+  float:left;
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.make_l_l{
+  float: left
+}
+.make_l_l image{
+  width: 55px;
+  height: 51px;
+}
+.my_teacher{
+  color: #656565;
+  font-size: 14px
+}
+.login{
+  width: 65px;
+  height: 18px;
+  font-size: 13px
+}
+.login_1{
+  float: left
+}
+.scudent{
+  color: #61BD3B;
+  font-size: 12px;
+  margin-top: 10px
+}
+.wire{
+  width:100%;
+  height:10px;
+  background-color: #F2F2F2
+}
+.excellent{
+  margin-top: 12px;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #E7E7E7;
+  text-align: center;
+  line-height: 40px;
+  color: #656565;
+  font-size: 16px 
+}
+
+.excellent_teacher_l image{
+  width: 80px;
+  height: 80px;
+  float: left;
+}
+
+.excellent_teacher_l .name{
+  font-size: 16px;
+  color: #656565;
+  float: left
+}
+.fame_l{
+  font-size: 12px;
+  color: #656565;
+  margin-top:6px;
+  padding-left: 40px
+}
+.fame{
+  font-size: 12px;
+  color: #656565;
+}
+.top{
+  position: relative;
+}
+.service{
+  width: 55px;
+  height: 55px;
+  position: absolute;
+  z-index: 1000;
+  bottom: 100px;
+  right: 10px
+}
+
+
+.excellent_teacher{
+  display: flex;
+  flex-direction: column;
+}
+
+.excellent_teacher_l{
+  display: flex;
+  flex-direction: row;
+}
+
+.c{
+  display: flex;
+  flex-shrink: 200;
+}
+
+.side{
+  display: flex;
+  flex-direction: column;
+  margin: 10rpx;
+  color: #656565;
+  font-size: 12px;
+  line-height: 50rpx
+}
+.side_l{
+  font-size: 14px;
+}
+.side_r{
+  margin-left: 20rpx;
+}
+

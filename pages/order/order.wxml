@@ -1,0 +1,37 @@
+<view class="top">
+  <view class="content">
+    <view class="content_top">订单详情</view>
+    <view class="content_title">
+      <text>老师姓名</text>
+      <text name='name'>{{temp.name}}</text>
+    </view>
+    <view class="content_title">
+      <text>老师  ID </text>
+      <text name='nameID'>{{temp.nameID}}</text>
+    </view>
+    <view class="content_title">
+      <text>科目</text>
+      <text name='subject'>{{temp.subject}}</text>
+    </view>
+    <view class="content_title">
+      <text>年级</text>
+      <text name='grade'>{{temp.grade}}</text>
+    </view>
+    <view class="content_title">
+      <text>课时费</text>
+      <text name='charge'>{{temp.charge}}</text>
+    </view>
+    <view class="content_title">
+      <text>上课时间</text>
+      <text name='updatetime'>{{temp.updatetime}}</text>
+    </view>
+    <view class="content_title">
+      <text>授课时间</text>
+      <text name='cycle'>{{temp.cycle}}</text>
+    </view>
+  </view>
+ 
+  <navigator url='../order/order' hover-class="none">
+    <button class="refer"  data-tid='{{temp.id}}'>确认支付</button>
+  </navigator>
+</view>

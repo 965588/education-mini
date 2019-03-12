@@ -1,0 +1,21 @@
+<view class="topp">
+    <navigator url='../show_details/show_details'><view class="details">提现明细</view></navigator>
+   <view class="wallet">
+     <image class="image" src='../../img/Wallet.png'></image>
+   </view>
+   <view class="money">
+     <view class="money_l">500.00<text class='font'>元</text></view>
+   </view>
+  <view class="top">
+    <view class="top_l">
+     <view class="mone">
+       <text class="">提现金额:</text>
+       <input class="mobile" placeholder="请输入提现金额" auto-focus />
+     </view> 
+     <view>元</view>
+   </view>
+  </view>
+
+    <navigator url='../recharge/recharge'><button class="refer" bindtap="setDisabled">立即提现</button></navigator>
+    <view class="account">1-3个工作日到账，节假日可能有所延迟</view>
+</view>

@@ -1,0 +1,24 @@
+<view>
+    <view class='swiper_con'> 
+    
+          <image class="image" src='../../img/touxiang.jpg'></image>
+          <view class="content"> 
+            <view class="name">王教员<text class="school">(研究生毕业)</text></view>
+            <view class="name">ID：123456</view>
+            <view class="math">小学数学</view>
+            <view class="study">授课区域：<text class='font'>长安区</text></view>
+            <view class="study">陕西师范大学：<text class='font'>数学与数学应用</text></view>
+          </view> 
+      </view>
+
+      <view class='swiper_con'>
+          <image class="image" src='../../img/touxiang.jpg'></image>
+           <view class="content">
+            <view class="name">王教员<text class="school">(研究生毕业)</text></view>
+            <view class="name">ID：123456</view>
+            <view class="math">小学数学</view>
+            <view class="study">授课区域：<text class='font'>长安区</text></view>
+            <view class="study">陕西师范大学：<text class='font'>数学与数学应用</text></view>
+          </view> 
+      </view>
+</view>

@@ -1,0 +1,23 @@
+<view class="top">
+  <view class="content">
+    <view class="content_r">2018-5-1</view>
+    <view class="content_l">
+      <view>提现</view>
+      <view>￥50</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="content_r">2018-5-1</view>
+    <view class="content_l">
+      <view>提现</view>
+      <view>￥50</view>
+    </view>
+  </view>
+  <view class="content">
+    <view class="content_r">2018-5-1</view>
+    <view class="content_l">
+      <view>提现</view>
+      <view>￥50</view>
+    </view>
+  </view>
+</view>

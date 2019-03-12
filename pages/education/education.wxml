@@ -1,0 +1,167 @@
+<!--pages/education/education.wxml-->
+<form bindsubmit="submitForm">
+  <view> 
+    <view class="top">
+      <view class="top_l">学员信息</view>
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 学员姓名</view>
+        </view>
+        <input class="inputt" value='{{bag.name}}' name="name" placeholder="请输入学员姓名" />
+      </view>
+      <radio-group class="radio-group" bindchange="radioChange" name="sex">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 学员性别</view> 
+        </view>
+        <label class="radio" >
+          <view class="radio_l">
+            <view class="radio_l_l"></view>
+            <radio value="1" checked="{{item.checked}}" checked="true" />男
+          </view>
+          <view class="radio_r"></view>
+          <radio value="2" checked="{{item.checked}}" />女
+        </label>
+      </radio-group>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view> 
+          <view class="name"> 手机号</view>
+        </view> 
+        <input class="inputt" type='number' bindtap='bindvalue' value='{{bag.phone}}' name="tel" placeholder="请输入手机号" />
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 验证码</view>
+        </view>
+
+        <view class="choice">
+          <input class="inputt" id="l"  name="varify" placeholder="请输入验证码" />
+          <!-- <image src="../../img/button3.png"  bindtap='sendcode'></image> -->
+          <view class="btntext" bindtap='sendcode'>{{btntext}}</view>
+        </view>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 年级 </view>
+        </view>
+        <picker class="choice_l" bindchange="bindPickerr" range="{{grade}}">
+          <view class="picker">
+            <input class="option" name="grade"  placeholder="请输入年级" value='{{index}}' />
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 科目</view>
+        </view>
+        <picker class="choice_l" bindchange="bindPicker" value="{{index}}" range="{{course}}">
+          <view class="picker">
+            <input class="option" name="subject" placeholder="请输入科目" value='{{option}}' />
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 授课时间</view>
+        </view>
+        <picker class="choice_l" bindchange="item" range="{{give}}">
+          <view class="picker">
+            <input class="option" name="time" placeholder="请输入授课时间" value="{{item}}" />
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="dian">* </view>
+          <view class="name"> 授课区域</view>
+        </view>
+        <picker class="choice_l" bindchange="eame" value="{{index}}" range="{{area}}">
+          <view class="picker">
+            <input class="option" value='{{bag.eame}}' name="eame" placeholder="请输入授课区域" value="{{district}}" />
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section_r_r">
+        <view class="section_l_r">
+          <view class="diann">* </view>
+          <view class="name"> 详细地址</view>
+        </view>
+        <input class="inpu" value='{{bag.address}}' name="detail" placeholder="请输入详细地址" />
+      </view>
+    </view>
+
+
+
+    <view class="top_r">
+      <view class="top_l">家教要求</view>
+
+      <radio-group class="radio-group" bindchange="radioChange" name="teachersex">
+        <view class="section_l">
+          <view class="name_l"> 教师性别</view>
+        </view>
+        <label class="radio" >
+          <view class="radio_l">
+            <view class="radio_l_l">男</view>
+            <radio value="1" checked="{{item.checked}}" checked="true" />
+          </view>
+          <view class="radio_r">女</view>
+          <radio value="2" checked="{{item.checked}}" />
+        </label>
+      </radio-group>
+
+      <view class="section">
+        <view class="section_l">
+          <view class="name_l"> 收费金额</view>
+        </view>
+        <picker class="choice_l" bindchange="money" value="{{0}}" range="{{money}}">
+          <view class="picker">
+            <input class="option" value='{{bag.money}}' placeholder="请输入收费金额" name="money" value="{{usa}}" />
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+            <text>参考标准</text>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section">
+        <view class="section_l"> 
+          <view class="name_l"> 老师类型</view>
+        </view>
+        <picker class="choice_l" bindchange="teacher" value="{{0}}" range="{{type}}">
+          <view class="picker">
+            <input class="option" value='{{bag.teacher}}' placeholder="请输入老师类型" name="teacher" value="{{teacher}}" />
+            <image class="printt" src="../../img/interface-arrowright拷贝2.png"></image>
+          </view>
+        </picker>
+      </view>
+
+      <view class="section_r_r">
+        <view class="section_l_r">
+          <view class="name_l"> 要求</view>
+        </view>
+        <input class="inpu" value='{{bag.text}}' placeholder="请简单描述一下你对老师的要求" name="ask" />
+      </view>
+    </view>
+
+
+
+    <button class="refer" formType="submit">提交</button>
+
+  </view>
+</form>

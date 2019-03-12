@@ -1,0 +1,22 @@
+<view class="top">
+   <view class="top_l">
+     <view class="mone">
+       <text class="money">提现金额:</text>
+       <input class="mobile" placeholder="请输入提现金额" auto-focus />
+     </view> 
+     <view>元</view>
+   </view>
+   <view class="content">
+       <view class="count">100</view>
+       <view class="count">150</view>
+       <view class="count">200</view>
+   </view>
+    <view class="content_l">
+       <view class="count">300</view>
+       <view class="count">400</view>
+       <view class="count">500</view>
+   </view>
+   <navigator url='../recharge/recharge'><button class="refer" bindtap="setDisabled">立即充值</button></navigator>
+   
+
+</view>
